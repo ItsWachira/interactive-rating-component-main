@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+  
+  <title>Frontend Mentor | Interactive rating component</title>
+    <script>
+    function GetRating() {
+        localStorage.section = document.getElementById("rating-1").value;
+      return false;
+    }
+    </script>
+
+</head>
+<body>
+<main>
+  <section>
+    <div class="main-container">
+      <div class="content">
+          <div class="star-image">
+              <img src="./images/icon-star.svg" alt="logo">
+          </div>
+
+        <div class="review-question">
+          <h1>How did we do?</h1>
+          <p>Please let us know how we did with your support request.
+            All feedback is appreciated to help us improve our offering!</p>
+        </div>
+          <form action="thankyou.html">
+              <div class="rating">
+                  <div class="rating-item">
+                      <input type="submit" name="1" id="rating-1" value="1">
+
+                  </div>
+
+                  <!--            <div class="rating-item">-->
+                  <!--              <input type="submit" name="2" class="rating"  value="2">-->
+                  <!--            </div>-->
+                  <!--            <div class="rating-item">-->
+                  <!--              <input type="submit" name="3" class="rating"  value="3">-->
+                  <!--            </div>-->
+                  <!--            <div class="rating-item">-->
+                  <!--              <input type="submit" name="4" class="rating"  value="4">-->
+                  <!--            </div>-->
+                  <!--            <div class="rating-item">-->
+                  <!--              <input type="submit" name="5" class="rating"  value="5">-->
+                  <!--            </div>-->
+              </div>
+          </form>
+<!--          href="thankyou.html"-->
+
+        <a  class="submit" onClick="GetRating();">Submit</a>
+
+      </div>
+    </div>
+  </section>
+</main>
+
+
+<!--<script src="script.js"></script>-->
+</body>
+</html>
